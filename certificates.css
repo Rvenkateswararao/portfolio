@@ -1,0 +1,78 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f5f9;
+  margin: 0;
+  padding: 0;
+  color: #1a1a1a;
+}
+
+header {
+  background-color: #2f4fdd;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #1a1a1a;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.back-home:hover {
+  background-color: #000;
+}
+
+.certificate-section {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  font-size: 20px;
+  color: #2f4fdd;
+  margin-bottom: 10px;
+}
+
+.cert-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cert-group a {
+  text-decoration: none;
+  background-color: #2f4fdd;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.cert-group a:hover {
+  background-color: #1a1a1a;
+}

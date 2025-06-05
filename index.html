@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Venkateswararao</a>
+    </div>
+
+    <div class="right">
+      <a href="certificates.html">
+        <i class="fa-solid fa-certificate"></i>
+        <span>Certificates</span>
+      </a>
+
+      <a href="Venkateswararao_resum.pdf" target="_blank">
+        <i class="fa-solid fa-file"></i>
+        <span>Resume</span>
+      </a>
+
+      <a href="https://github.com/Rvenkateswararao" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/rvenkateswararao" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+
+      <a href="mailto:rvenkateswararao2000@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Venkatesh 👋</h2>
+        <p>Hello! I’m Venkateswararao, a passionate Junior Full Stack Developer with a strong foundation in both front-end and back-end development...</p>
+
+        <div class="links">
+          <a href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a>
+          <a href="#testimony"><i class="fa-solid fa-pen"></i><span>Testimony</span></a>
+          <a href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/venky_image.jpg" alt="Venkateswararao" />
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        Junior Full Stack Developer skilled in front-end and back-end development...
+      </div>
+      <div class="cells">
+        <!-- Skill cells -->
+        <div class="cell"><img src="images/html-logo.webp" alt="HTML" /><span>HTML</span></div>
+        <div class="cell"><img src="images/css-logo.webp" alt="CSS" /><span>CSS</span></div>
+        <div class="cell"><img src="images/javascript-logo.webp" alt="JS" /><span>JavaScript</span></div>
+        <div class="cell"><img src="images/python_logo.jpg" alt="Python" /><span>Python</span></div>
+        <div class="cell"><img src="images/react-logo.webp" alt="React" /><span>React.js</span></div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+      <h2>Certificates</h2>
+      <div class="text">
+        <!-- Add certificate descriptions or images -->
+        <p>1. Python Programming </p>
+        <p>2. Django Web Development </p>
+        <p>3. React Frontend Developer</p>
+      </div>
+    </section>
+
+    <!-- Testimony Section -->
+    <section id="testimony" class="testimony-section">
+      <h2>Testimony</h2>
+      <div class="group">
+        <div class="person-details">
+          <img src="images/venkyfullImage.jpg" />
+          <p>Venkatesh</p>
+          <p>Software Developer</p>
+        </div>
+        <div class="text">
+          I’m Venkateswararao, a dedicated Junior Full Stack Developer with a background in Mechanical Engineering...
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <div class="group">
+        <div class="text">
+          I’m Venkateswararao, born in Vijayawada and completed my B.Tech in Mechanical Engineering...
+        </div>
+        <form onsubmit="return sendMessage()">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+  <div class="footer-container">
+    <p class="footer-name">© 2025 Venkateswararao</p>
+
+    <div class="footer-links">
+      <a href="https://wa.me/919515860845" target="_blank" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="mailto:rvenkateswararao2000@gmail.com" title="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/mr_venkey_ramisetti_" target="_blank" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  <script>
+    function sendMessage() {
+      alert("Message sent successfully! Thank you for contacting me.");
+      return false; // Prevent actual form submission (you can integrate with backend/email later)
+    }
+  </script>
+</body>
+</html>
